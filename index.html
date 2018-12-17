@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Webpack App</title>
+    <style>
+        .draggable {
+            -webkit-app-region: drag
+        }
+        .undraggable {
+            -webkit-app-region: no-drag
+        }
+    </style>
+</head>
+
+<body style="height: 100%; width: 100%; background-color: #424242; margin: 0px; position: fixed;">
+    <script type="text/javascript" src="gui.js"></script>
+</body>
+<!--I deserve to be punnished for this-->
+<style>
+    .image-gallery {
+        width: auto;
+        height: calc(60vh - 100px);
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .image-gallery-slide {
+        background: rgba(0, 0, 0, .5);
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-gallery-slide img {
+        width: auto;
+        height: calc(60vh - 100px);
+        object-fit: cover;
+        overflow: hidden;
+        object-position: center center;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+    }
+
+    .fullscreen .image-gallery-slide img {
+        max-height: 100vh;
+        background-color: rgba(0, 0, 0, 0);
+    }
+</style>
+
+</html>
